@@ -49,3 +49,48 @@ Initial setup: Install dependencies and create Express server with Posts table
 
 **Status**: Part 1 Complete  
 **Date Started**: December 22, 2025
+
+## Part 2/17 - Express Router for Posts with GET and POST Endpoints
+
+### Commit Message
+```
+Add Express router for Posts with GET and POST endpoints
+
+- Create Posts router with RESTful endpoints
+- Implement GET endpoint to retrieve posts
+- Implement POST endpoint to create new posts
+- Integrate router with main Express application
+```
+
+### What Was Done
+
+#### Router Implementation
+- Created Posts router: `server/routes/Posts.js`
+- Implemented GET endpoint for retrieving posts
+- Implemented POST endpoint for creating new posts
+- Integrated router with main server file using `app.use('/posts', postRouter)`
+
+#### API Testing Tool Selection
+- Evaluated three API testing tools: **Bruno**, **Insomnia**, and **Postman**
+- Selected **Bruno** for the following reasons:
+  - Easier installation process
+  - Distributed as a lightweight app image (AppImage format)
+  - Lower resource consumption
+  - Better performance on slower systems (important for my laptop setup)
+
+### Files Created/Modified
+- `server/routes/Posts.js` - Posts router with GET and POST endpoints
+- `server/index.js` - Added post router integration
+
+### Tools Added
+- **Bruno** - API testing and development tool for testing REST endpoints
+
+### Notes: API Testing Tool Choice
+- Bruno was selected over alternatives due to installation simplicity and lightweight nature
+- The app image format provides better compatibility and portability on antiX Linux
+- Superior performance on resource-constrained systems like my current laptop
+
+---
+
+**Status**: Part 2 Complete  
+**Date Completed**: December 22, 2025
